@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#261b1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ショコラ研究室">
+  <meta name="description" content="一粒のショコラに込められた世界と、二人の好みを記録する私設ショコラ図鑑。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>ショコラ研究室 — 一粒に込められた、小さな世界。</title>
+</head>
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <div class="brand-lockup" id="go-home" role="button" tabindex="0" aria-label="図鑑へ戻る">
+        <span class="monogram" aria-hidden="true">C<span>✦</span></span>
+        <span class="brand-text"><span class="eyebrow">THE CHOCOLAT JOURNAL</span><strong>ショコラ研究室</strong></span>
+      </div>
+      <button class="header-setting icon-button" type="button" data-nav="settings" aria-label="設定を開く"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.05.05-1.78 1.78-.05-.05a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.57V20h-2.5v-.12a1.7 1.7 0 0 0-1.04-1.57 1.7 1.7 0 0 0-1.87.34l-.05.05-1.78-1.78.05-.05A1.7 1.7 0 0 0 8.2 15a1.7 1.7 0 0 0-1.58-1.04H6.5v-2.5h.12A1.7 1.7 0 0 0 8.2 10.4a1.7 1.7 0 0 0-.34-1.87l-.05-.05L9.6 6.7l.05.05a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1.04-1.57V5.4h2.5v.12a1.7 1.7 0 0 0 1.04 1.57 1.7 1.7 0 0 0 1.87-.34l.05-.05 1.78 1.78-.05.05a1.7 1.7 0 0 0-.34 1.87A1.7 1.7 0 0 0 21 11.46h.12v2.5H21A1.7 1.7 0 0 0 19.4 15Z" transform="translate(-1.8 -0.7)"/></svg></button>
+    </header>
+    <main id="view" class="main-content" aria-live="polite"></main>
+    <nav class="bottom-nav" aria-label="メインメニュー">
+      <button data-nav="gallery" class="nav-item" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 11h16M10 5v15M16 5v15"/></svg><span>ショコラ図鑑</span></button>
+      <button data-nav="form" class="nav-item nav-add" type="button"><span class="nav-add-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><span>新しく記録</span></button>
+      <button data-nav="brands" class="nav-item" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V8l8-4 8 4v11H4Z"/><path d="M9 20v-7h6v7M4 9h16"/></svg><span>ブランド</span></button>
+      <button data-nav="insights" class="nav-item" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6.5 16v-6M12 16V5M17.5 16v-9"/><circle cx="6.5" cy="8" r="1"/><circle cx="12" cy="3" r="1"/><circle cx="17.5" cy="5" r="1"/></svg><span>好みの研究</span></button>
+    </nav>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

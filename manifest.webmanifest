@@ -1,0 +1,15 @@
+{
+  "name": "ショコラ研究室 — Chocolat Journal",
+  "short_name": "ショコラ研究室",
+  "description": "二人で味わったボンボンショコラを記録する私設図鑑",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf6ef",
+  "theme_color": "#261b1a",
+  "lang": "ja",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
